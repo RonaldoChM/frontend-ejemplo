@@ -15,7 +15,7 @@
             :hours="grade.hours"
             :full_name="grade.full_name"    
            
-        />        <!--</Grade>:full_name="grade.full_name"         -->
+        />  
     </div>
 </template>
 

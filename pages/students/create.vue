@@ -44,15 +44,23 @@ export default{
     },
     methods:{
         async save(){
-            await axios.post('http://127.0.0.1:8000/api/students',this.student)
-            .then((res) =>{
-                console.log(res.data);
+            if(confirm("Desea registrar al estudiante ' " + this.student.first_name + " " + this.student.last_name + " '")){ 
+                await axios.post('http://127.0.0.1:8000/api/students',this.student)
+                .then((res) =>{
+                    console.log(res.data);
+                    this.student.first_name = "";
+                    this.student.last_name = "";
+                    this.student.age = 0;
+                    this.student.cell_phone = "";
+                    this.student.address = "";
+                    alert('El estudiante se registro exitosamente');
+                })
+                .catch((error) => {
+                    console.log(error);
+                    alert("Error:\n\t verifique que todos los campos este llenados correctamente");
+                })
             }
-            )
-            .catch((error) => {
-                xonsole.log(error);
-            }
-            )
+            
         }
     } 
 }

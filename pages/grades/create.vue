@@ -1,7 +1,7 @@
 <template>
     <!--['name','level','hours','teacher_id']-->
     <div>
-        <h1>Crear estudiante</h1>
+        <h1>Crear Curso</h1>
         <nuxt-link class="text-blue-600" to="/grades"> Listar Cursos</nuxt-link>
 
         <form @submit.prevent="save">
@@ -18,16 +18,19 @@
                 <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" v-model="grade.hours"/>
             </div>
             <div>
+                <!--poner un DROPBOX-->
                 <label>Profesor</label>
                 <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" v-model="grade.teacher_id"/>
             </div>
-           
-            <button class="rounded-full decoration-orange-600" type="submit">Guardar</button>
+
+                           
         </form>
+        <button class="rounded-full decoration-orange-600" type="submit">Guardar</button>
     </div>
 </template>
 <script>
 import axios from 'axios';
+import Teacher from '../../components/Teacher.vue';
 export default{
     data(){
         return{
@@ -41,15 +44,29 @@ export default{
     },
     methods:{
         async save(){
-            await axios.post('http://127.0.0.1:8000/api/grades',this.grade)
-            .then((res) =>{
-                console.log(res.data);
+            if(confirm("Desea registrar el curso ' " + this.grade.name + " '")){
+                await axios.post('http://127.0.0.1:8000/api/grades',this.grade)
+                .then((res) =>{
+                    console.log(res.data); 
+                    this.grade.name = "";
+                    this.grade.level = "";
+                    this.grade.hours = 0;
+                    this.grade.teacher_id = "";
+                    
+                    alert("El curso se registro exitosamente");
+                }
+                )
+                .catch((error) => {
+                    console.log(error);
+                    alert("Error:\n\t verifique que todos los campos este llenados correctamente");
+                }
+                )
             }
-            )
-            .catch((error) => {
-                xonsole.log(error);
-            }
-            )
+        },
+        cargar(){
+            res = axios.get('http://127.0.0.1:8000/api/grades');
+            this.grades = res.data;  
+            return this.grades;          
         }
     } 
 }

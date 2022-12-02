@@ -41,19 +41,23 @@ export default{
     },
     async created(){
         const res = await axios.get('http://127.0.0.1:8000/api/teachers/' + this.$route.params.id);
-        this.teacher = res.data;
+        this.teacher = res.data;       
     },
     methods:{
         async uptade(){
-            const res = await axios.put('http://127.0.0.1:8000/api/teachers/' + this.$route.params.id, this.teacher)
-            .then((res) =>{
-                console.log(res.data);
+            
+            if(confirm("Desea actualizar al Profesor ")){
+                const res = await axios.put('http://127.0.0.1:8000/api/teachers/' + this.$route.params.id, this.teacher)
+                .then((res) =>{
+                    console.log(res.data);
+                    alert('Los datos del profesor se actualizaron correctamente');
+                }
+                )
+                .catch((error) => {
+                    console.log(error);
+                }
+                )
             }
-            )
-            .catch((error) => {
-                console.log(error);
-            }
-            )
         }
     }
 }

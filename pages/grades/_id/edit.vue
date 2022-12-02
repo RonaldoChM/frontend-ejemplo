@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Actualizar estudiante</h1>
-        <nuxt-link to="/grades"> Listar estudiantes</nuxt-link>
+        <nuxt-link class="text-blue-600" to="/grades"> Listar estudiantes</nuxt-link>
 
         <form @submit.prevent="uptade">
             <div>
@@ -49,15 +49,18 @@ export default{
     },
     methods:{
         async uptade(){
-            const res = await axios.put('http://127.0.0.1:8000/api/grades/' + this.$route.params.id, this.grade)
-            .then((res) =>{
-                console.log(res.data);
-            }
+            if(confirm("Desea actualizar el curso ")){
+                const res = await axios.put('http://127.0.0.1:8000/api/grades/' + this.$route.params.id, this.grade)
+                .then((res) =>{
+                    console.log(res.data);
+                    alert("Los datos del curso se actualizaron correctamente");
+                }
+                ) 
+                .catch((error) => {
+                    console.log(error);
+                }
             )
-            .catch((error) => {
-                console.log(error);
             }
-            )
         }
     }
 }
