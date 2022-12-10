@@ -3,6 +3,7 @@
         <h1 class="uppercase font-bold">Vista Estudiante</h1>
         <nuxt-link class="text-red-600" to="/grades">Ver Cursos</nuxt-link>
         <nuxt-link class="text-blue-600" to="/teachers">Ver Profesores</nuxt-link>
+        <nuxt-link class="text-orange-600" to="/assignments">Ver Asignaciones</nuxt-link>
         <nuxt-link class="text-green-600" to="/students/create">crear nuevo estudiante</nuxt-link>
         <Student 
             v-for="student of students"

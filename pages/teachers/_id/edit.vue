@@ -51,6 +51,7 @@ export default{
                 .then((res) =>{
                     console.log(res.data);
                     alert('Los datos del profesor se actualizaron correctamente');
+                    window.location.assign('http://localhost:3000/teachers');
                 }
                 )
                 .catch((error) => {

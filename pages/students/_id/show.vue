@@ -1,8 +1,7 @@
 <template>
     <div>
         <h1>ver estudiante</h1>
-        <nuxt-link class="text-blue-600" to="/assignments">Asignar Materia</nuxt-link>
-        <nuxt-link class="text-green-600" to="/students">Listar estudiante</nuxt-link>
+        <nuxt-link class="text-green-600" to="/students">Listar estudiantes</nuxt-link>
         <div>
             <h2>{{student.first_name}} {{student.last_name}}</h2>
             <p>Edad: {{student.age}}</p>

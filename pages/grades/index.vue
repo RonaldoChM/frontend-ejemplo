@@ -4,6 +4,7 @@
         <h1 class="uppercase font-bold">Vista Cursos</h1>
         <nuxt-link class="text-red-600" to="/students">Ver Estudiantes</nuxt-link>
         <nuxt-link class="text-blue-600" to="/teachers">Ver Profesores</nuxt-link>
+        <nuxt-link class="text-orange-600" to="/assignments">Ver Asignaciones</nuxt-link>
 
         <nuxt-link class="text-green-600" to="/grades/create">crear nuevo Curso</nuxt-link>
         <Grade 
