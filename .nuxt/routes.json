@@ -1,0 +1,104 @@
+[
+  {
+    "name": "assignments",
+    "path": "/assignments",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\assignments\\\\index.vue",
+    "chunkName": "pages/assignments/index"
+  },
+  {
+    "name": "grades",
+    "path": "/grades",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\grades\\\\index.vue",
+    "chunkName": "pages/grades/index"
+  },
+  {
+    "name": "students",
+    "path": "/students",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\students\\\\index.vue",
+    "chunkName": "pages/students/index"
+  },
+  {
+    "name": "teachers",
+    "path": "/teachers",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\teachers\\\\index.vue",
+    "chunkName": "pages/teachers/index"
+  },
+  {
+    "name": "assignments-create",
+    "path": "/assignments/create",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\assignments\\\\create.vue",
+    "chunkName": "pages/assignments/create"
+  },
+  {
+    "name": "grades-create",
+    "path": "/grades/create",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\grades\\\\create.vue",
+    "chunkName": "pages/grades/create"
+  },
+  {
+    "name": "students-create",
+    "path": "/students/create",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\students\\\\create.vue",
+    "chunkName": "pages/students/create"
+  },
+  {
+    "name": "teachers-create",
+    "path": "/teachers/create",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\teachers\\\\create.vue",
+    "chunkName": "pages/teachers/create"
+  },
+  {
+    "name": "assignments-id-edit",
+    "path": "/assignments/:id/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\assignments\\\\_id\\\\edit.vue",
+    "chunkName": "pages/assignments/_id/edit"
+  },
+  {
+    "name": "assignments-id-show",
+    "path": "/assignments/:id/show",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\assignments\\\\_id\\\\show.vue",
+    "chunkName": "pages/assignments/_id/show"
+  },
+  {
+    "name": "grades-id-edit",
+    "path": "/grades/:id/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\grades\\\\_id\\\\edit.vue",
+    "chunkName": "pages/grades/_id/edit"
+  },
+  {
+    "name": "grades-id-show",
+    "path": "/grades/:id/show",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\grades\\\\_id\\\\show.vue",
+    "chunkName": "pages/grades/_id/show"
+  },
+  {
+    "name": "students-id-edit",
+    "path": "/students/:id/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\students\\\\_id\\\\edit.vue",
+    "chunkName": "pages/students/_id/edit"
+  },
+  {
+    "name": "students-id-show",
+    "path": "/students/:id/show",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\students\\\\_id\\\\show.vue",
+    "chunkName": "pages/students/_id/show"
+  },
+  {
+    "name": "teachers-id-edit",
+    "path": "/teachers/:id/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\teachers\\\\_id\\\\edit.vue",
+    "chunkName": "pages/teachers/_id/edit"
+  },
+  {
+    "name": "teachers-id-show",
+    "path": "/teachers/:id/show",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\teachers\\\\_id\\\\show.vue",
+    "chunkName": "pages/teachers/_id/show"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]
