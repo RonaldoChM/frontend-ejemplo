@@ -45,7 +45,8 @@ export default{
     methods:{
         async save(){
             if(confirm("Desea registrar al estudiante ' " + this.student.first_name + " " + this.student.last_name + " '")){ 
-                await axios.post('http://127.0.0.1:8000/api/students',this.student)
+                await axios.post('http://ejemplo1.test/api/students',this.student)
+                /* await axios.post('http://127.0.0.1:8000/api/students',this.student) */
                 .then((res) =>{
                     console.log(res.data);
                     this.student.first_name = "";

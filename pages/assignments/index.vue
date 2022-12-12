@@ -38,7 +38,7 @@ import {Assignment} from '../../components/Assignment.vue';
             }
         },
         async created(){
-            const res = await axios.get('http://127.0.0.1:8000/api/assignments');
+            const res = await axios.get('http://ejemplo1.test/api/assignments');
             this.assignments = res.data;
             this.search =this.assignments;
             console.log(this.assignments);

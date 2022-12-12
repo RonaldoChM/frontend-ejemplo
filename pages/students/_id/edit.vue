@@ -44,13 +44,13 @@ export default{
         }
     },
     async created(){
-        const res = await axios.get('http://127.0.0.1:8000/api/students/' + this.$route.params.id);
+        const res = await axios.get('http://ejemplo1.test/api/students/' + this.$route.params.id);
         this.student = res.data;
     },
     methods:{
         async uptade(){
             if(confirm("Desea actualizar al estudiante")){
-                const res = await axios.put('http://127.0.0.1:8000/api/students/' + this.$route.params.id, this.student)
+                const res = await axios.put('http://ejemplo1.test/api/students/' + this.$route.params.id, this.student)
                 .then((res) =>{
                 console.log(res.data);
                     alert('Los datos del estudiante se actualizaron correctamente');

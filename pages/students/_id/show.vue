@@ -22,14 +22,16 @@ export default{
         }
     },
     async created(){
-        const res = await axios.get('http://127.0.0.1:8000/api/students/' + this.$route.params.id);
+        const res = await axios.get('http://ejemplo1.test/api/students/' + this.$route.params.id);
+        /* const res = await axios.get('http://127.0.0.1:8000/api/students/' + this.$route.params.id); */
         this.student = res.data;
     },
     methods:{
         destroy(){
             console.log('Eliminar')
             if(confirm("Desea eliminar al estudiante ' " + this.student.first_name + " " + this.student.last_name + " '")){
-                const res = axios.delete('http://127.0.0.1:8000/api/students/' + this.$route.params.id);
+                const res = axios.delete('http://ejemplo1.test/api/students/' + this.$route.params.id);
+                /* const res = axios.delete('http://127.0.0.1:8000/api/students/' + this.$route.params.id); */
                 console.log(res.data);
                 window.location.assign('http://localhost:3000/students');
             }

@@ -21,7 +21,7 @@
 
 <script>
 import axios from 'axios';
-import Teacher from '../../components/Teacher.vue';
+import Teacher from '@/components/Teacher';
     export default{
         data(){
             return{
@@ -29,7 +29,8 @@ import Teacher from '../../components/Teacher.vue';
             }
         },
         async created(){
-            const res = await axios.get('http://127.0.0.1:8000/api/teachers');
+            const res = await axios.get('http://ejemplo1.test/api/teachers');
+            /* const res = await axios.get('http://127.0.0.1:8000/api/teachers'); */
             this.teachers = res.data;
             console.log(this.teachers);
         }

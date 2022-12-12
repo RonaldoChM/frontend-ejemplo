@@ -30,7 +30,7 @@ import Grade from '../../components/Grade.vue';
             }
         },
         async created(){
-            const res = await axios.get('http://127.0.0.1:8000/api/grades');
+            const res = await axios.get('http://ejemplo1.test/api/grades');
             this.grades = res.data;
             console.log(this.grades);
         }
