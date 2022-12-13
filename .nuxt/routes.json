@@ -3,119 +3,102 @@
     "name": "assignments",
     "path": "/assignments",
     "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\assignments\\\\index.vue",
-    "chunkName": "pages/assignments/index",
-    "_name": "_0b5c78bd"
+    "chunkName": "pages/assignments/index"
   },
   {
     "name": "grades",
     "path": "/grades",
     "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\grades\\\\index.vue",
-    "chunkName": "pages/grades/index",
-    "_name": "_67093575"
+    "chunkName": "pages/grades/index"
   },
   {
     "name": "students",
     "path": "/students",
     "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\students\\\\index.vue",
-    "chunkName": "pages/students/index",
-    "_name": "_199687ce"
+    "chunkName": "pages/students/index"
   },
   {
     "name": "teachers",
     "path": "/teachers",
     "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\teachers\\\\index.vue",
-    "chunkName": "pages/teachers/index",
-    "_name": "_4d3bc340"
+    "chunkName": "pages/teachers/index"
   },
   {
     "name": "assignments-create",
     "path": "/assignments/create",
     "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\assignments\\\\create.vue",
-    "chunkName": "pages/assignments/create",
-    "_name": "_f0322cbe"
+    "chunkName": "pages/assignments/create"
   },
   {
     "name": "grades-create",
     "path": "/grades/create",
     "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\grades\\\\create.vue",
-    "chunkName": "pages/grades/create",
-    "_name": "_bc5c782e"
+    "chunkName": "pages/grades/create"
   },
   {
     "name": "students-create",
     "path": "/students/create",
     "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\students\\\\create.vue",
-    "chunkName": "pages/students/create",
-    "_name": "_c9d1dc76"
+    "chunkName": "pages/students/create"
   },
   {
     "name": "teachers-create",
     "path": "/teachers/create",
     "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\teachers\\\\create.vue",
-    "chunkName": "pages/teachers/create",
-    "_name": "_fc1e2104"
+    "chunkName": "pages/teachers/create"
   },
   {
     "name": "assignments-id-edit",
     "path": "/assignments/:id/edit",
     "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\assignments\\\\_id\\\\edit.vue",
-    "chunkName": "pages/assignments/_id/edit",
-    "_name": "_3a7ec5a2"
+    "chunkName": "pages/assignments/_id/edit"
   },
   {
     "name": "assignments-id-show",
     "path": "/assignments/:id/show",
     "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\assignments\\\\_id\\\\show.vue",
-    "chunkName": "pages/assignments/_id/show",
-    "_name": "_6f1158a2"
+    "chunkName": "pages/assignments/_id/show"
   },
   {
     "name": "grades-id-edit",
     "path": "/grades/:id/edit",
     "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\grades\\\\_id\\\\edit.vue",
-    "chunkName": "pages/grades/_id/edit",
-    "_name": "_285f8432"
+    "chunkName": "pages/grades/_id/edit"
   },
   {
     "name": "grades-id-show",
     "path": "/grades/:id/show",
     "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\grades\\\\_id\\\\show.vue",
-    "chunkName": "pages/grades/_id/show",
-    "_name": "_7820f95a"
+    "chunkName": "pages/grades/_id/show"
   },
   {
     "name": "students-id-edit",
     "path": "/students/:id/edit",
     "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\students\\\\_id\\\\edit.vue",
-    "chunkName": "pages/students/_id/edit",
-    "_name": "_58605aea"
+    "chunkName": "pages/students/_id/edit"
   },
   {
     "name": "students-id-show",
     "path": "/students/:id/show",
     "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\students\\\\_id\\\\show.vue",
-    "chunkName": "pages/students/_id/show",
-    "_name": "_60208dfe"
+    "chunkName": "pages/students/_id/show"
   },
   {
     "name": "teachers-id-edit",
     "path": "/teachers/:id/edit",
     "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\teachers\\\\_id\\\\edit.vue",
-    "chunkName": "pages/teachers/_id/edit",
-    "_name": "_3720ee32"
+    "chunkName": "pages/teachers/_id/edit"
   },
   {
     "name": "teachers-id-show",
     "path": "/teachers/:id/show",
     "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\teachers\\\\_id\\\\show.vue",
-    "chunkName": "pages/teachers/_id/show",
-    "_name": "_791cacb6"
+    "chunkName": "pages/teachers/_id/show"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_11d1c8f1"
+    "chunkName": "pages/index"
   }
 ]
