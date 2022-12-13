@@ -1,0 +1,20 @@
+{
+  "Assignment": {
+    "description": "Auto imported from components/Assignment.vue"
+  },
+  "Grade": {
+    "description": "Auto imported from components/Grade.vue"
+  },
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Student": {
+    "description": "Auto imported from components/Student.vue"
+  },
+  "Teacher": {
+    "description": "Auto imported from components/Teacher.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  }
+}

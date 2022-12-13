@@ -1,0 +1,121 @@
+[
+  {
+    "name": "assignments",
+    "path": "/assignments",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\assignments\\\\index.vue",
+    "chunkName": "pages/assignments/index",
+    "_name": "_0b5c78bd"
+  },
+  {
+    "name": "grades",
+    "path": "/grades",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\grades\\\\index.vue",
+    "chunkName": "pages/grades/index",
+    "_name": "_67093575"
+  },
+  {
+    "name": "students",
+    "path": "/students",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\students\\\\index.vue",
+    "chunkName": "pages/students/index",
+    "_name": "_199687ce"
+  },
+  {
+    "name": "teachers",
+    "path": "/teachers",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\teachers\\\\index.vue",
+    "chunkName": "pages/teachers/index",
+    "_name": "_4d3bc340"
+  },
+  {
+    "name": "assignments-create",
+    "path": "/assignments/create",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\assignments\\\\create.vue",
+    "chunkName": "pages/assignments/create",
+    "_name": "_f0322cbe"
+  },
+  {
+    "name": "grades-create",
+    "path": "/grades/create",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\grades\\\\create.vue",
+    "chunkName": "pages/grades/create",
+    "_name": "_bc5c782e"
+  },
+  {
+    "name": "students-create",
+    "path": "/students/create",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\students\\\\create.vue",
+    "chunkName": "pages/students/create",
+    "_name": "_c9d1dc76"
+  },
+  {
+    "name": "teachers-create",
+    "path": "/teachers/create",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\teachers\\\\create.vue",
+    "chunkName": "pages/teachers/create",
+    "_name": "_fc1e2104"
+  },
+  {
+    "name": "assignments-id-edit",
+    "path": "/assignments/:id/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\assignments\\\\_id\\\\edit.vue",
+    "chunkName": "pages/assignments/_id/edit",
+    "_name": "_3a7ec5a2"
+  },
+  {
+    "name": "assignments-id-show",
+    "path": "/assignments/:id/show",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\assignments\\\\_id\\\\show.vue",
+    "chunkName": "pages/assignments/_id/show",
+    "_name": "_6f1158a2"
+  },
+  {
+    "name": "grades-id-edit",
+    "path": "/grades/:id/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\grades\\\\_id\\\\edit.vue",
+    "chunkName": "pages/grades/_id/edit",
+    "_name": "_285f8432"
+  },
+  {
+    "name": "grades-id-show",
+    "path": "/grades/:id/show",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\grades\\\\_id\\\\show.vue",
+    "chunkName": "pages/grades/_id/show",
+    "_name": "_7820f95a"
+  },
+  {
+    "name": "students-id-edit",
+    "path": "/students/:id/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\students\\\\_id\\\\edit.vue",
+    "chunkName": "pages/students/_id/edit",
+    "_name": "_58605aea"
+  },
+  {
+    "name": "students-id-show",
+    "path": "/students/:id/show",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\students\\\\_id\\\\show.vue",
+    "chunkName": "pages/students/_id/show",
+    "_name": "_60208dfe"
+  },
+  {
+    "name": "teachers-id-edit",
+    "path": "/teachers/:id/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\teachers\\\\_id\\\\edit.vue",
+    "chunkName": "pages/teachers/_id/edit",
+    "_name": "_3720ee32"
+  },
+  {
+    "name": "teachers-id-show",
+    "path": "/teachers/:id/show",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\teachers\\\\_id\\\\show.vue",
+    "chunkName": "pages/teachers/_id/show",
+    "_name": "_791cacb6"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\xampp\\\\htdocs\\\\Ejemplo01\\\\frontendEjemplo\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_11d1c8f1"
+  }
+]
