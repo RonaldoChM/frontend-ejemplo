@@ -1,9 +1,19 @@
 <template>
     <div>
-        <h1>Actualizar Asignación</h1>
-        <nuxt-link class="text-blue-600" to="/assignments"> Listar asignaciones</nuxt-link>
-            
-            <div v-for="box in boxes">
+        <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 text-blue-600">Actualizar Asignación</h1>
+        <div class="flex items-center justify-start">
+            <div class="inline-flex shadow-md hover:shadow-lg focus:shadow-lg" role="group">
+                <nuxt-link class="rounded-l px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight
+                                uppercase
+                                hover:bg-blue-700
+                                focus:bg-blue-700 focus:outline-none focus:ring-0
+                                active:bg-blue-800
+                                transition
+                                duration-150
+                                ease-in-out" to="/assignments"> Listar asignaciones</nuxt-link>
+            </div>
+        </div>
+            <!-- <div v-for="box in boxes">
                 <div>
                     <label>Curso actual: 
                         <p>Codigo: {{box.grade_id}}, Nombre: {{box.name}}</p>
@@ -13,69 +23,90 @@
                 <div>
                     <label>
                         Estudiante actual: 
-                        <p>Matricula: {{box.student_id}}, Nombre: {{box.first_name}}, Apellido: {{box.last_name}}</p>
+                        <p>Matricula: {{box.student_id}}, Nombre: {{box.first_name}} {{box.last_name}}</p>
                     </label>         
                 </div>                
                 <hr/>
-            </div>      
+            </div>  -->     
             <hr/>
         <!----------------------------------------------->
-        <h2>Actualizar información</h2>
-        <form @submit.prevent="uptade">
-            <div>
-                <label>curso</label>
-                <input placeholder="Ingrese el codigo del curso..." class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" 
-                type="text" 
-                v-model="assignment.grade_id"/>
-            </div>
-            <div>
-                <label>estudiante</label>
-                <input placeholder="Ingrese la matricula del estudiante" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" 
-                type="text" 
-                v-model="assignment.student_id"/>
-            </div>
-            
-            <a v-on:click="uptade">Guardar</a>
-        </form>
-        
-        <div id="line">
-            <div>
-                <div class="filteredListGrade">
-                    <h2>Buscar Curso</h2>
-                    <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" 
-                    type="search" 
-                    v-model="searchDataGrade"
-                    placeholder="Buscar curso..."
-                    v-on:keyup.enter="filteredListGrade"/>
-                    <!--<button type="reset" class="text-green-600" v-on:keyup.enter="filteredListGrade">buscar</button>-->
+        <div class="w-full">
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" @submit.prevent="uptade">
+                <div>
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="assignmentgrade_id">Curso</label>
+                    <p 
+                    v-for="box in boxes" 
+                    v-bind:value="box.value">
+                        Clase actual: {{box.grade_id}} - {{box.name}}
+                    </p>   
+                    <div class="flex">
+                        <div class="mb-3 xl:w-96">
+                            <select class="form-select appearance-none
+                                block
+                                w-full
+                                px-3
+                                py-1.5
+                                text-base
+                                font-normal
+                                text-gray-700
+                                bg-white bg-clip-padding bg-no-repeat
+                                border border-solid border-gray-300
+                                rounded
+                                transition
+                                ease-in-out
+                                m-0
+                                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
+                                aria-label="Default select example"                        
+                                v-model="assignment.grade_id">
+                                <!-- <option selected>Selecciona un profesor</option> -->
+                                <option v-for="grade of grades" 
+                                :key="grade.id" 
+                                :id="grade.id" 
+                                :value="grade.id">{{grade.id}} - {{grade.name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="assignmentstudent_id">Estudiante</label>
+                    <p 
+                    v-for="box in boxes" 
+                    v-bind:value="box.value">
+                    Estudiante Actual: {{box.student_id}}, Nombre: {{box.first_name}} {{box.last_name}}
+                    </p>   
+                    <div class="flex">
+                        <div class="mb-3 xl:w-96">
+                            <select class="form-select appearance-none
+                                block
+                                w-full
+                                px-3
+                                py-1.5
+                                text-base
+                                font-normal
+                                text-gray-700
+                                bg-white bg-clip-padding bg-no-repeat
+                                border border-solid border-gray-300
+                                rounded
+                                transition
+                                ease-in-out
+                                m-0
+                                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
+                                aria-label="Default select example"                        
+                                v-model="assignment.student_id">
+                                <!-- <option selected>Selecciona un profesor</option> -->
+                                <option v-for="student of students" 
+                                :key="student.id" 
+                                :id="student.id" 
+                                :value="student.id">
+                                {{student.id}} - {{student.first_name}} {{student.last_name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-                <div v-for="grade in grades">
-                    <p class="list">
-                        Codigo: {{grade.id}}, Nombre: {{grade.name}}
-                    </p>      
-                    <hr/>   
-                </div>    
-            </div>
-                <!---------------------->
-                
-            <div>
-                <div class="filteredListStudent">
-                    <h2>Buscar estudiante</h2>
-                        <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" 
-                        type="search" 
-                        v-model="searchDataStudent"
-                        placeholder="Buscar estudiante..."
-                        v-on:keyup.enter="filteredListStudent"/>
-                        <!--<button type="reset"  class="text-green-600" v-on:keyup.enter="filteredListStudent">buscar</button>-->
-                </div>
-                <div v-for="student in students">
-                    <p class="list">
-                        Matricula: {{student.id}}, Nombre: {{student.first_name}} {{student.last_name}}                    
-                    </p> 
-                    <hr/>        
-                </div>  
-            </div>
-        </div>
+                <button class="rounded-r inline-block px-4 py-1.5 bg-green-600 text-white font-medium text-xs leading-tight uppercase hover:bg-green-700 focus:bg-green-700 focus:outline-none focus:ring-0 active:bg-green-800 transition duration-150 ease-in-out" type="submit">Guardar</button>
+            </form>
+        </div>     
     </div>
 </template>
 
@@ -123,7 +154,7 @@ export default{
                     console.log(res.data);
                     alert("Los datos del curso se actualizaron correctamente");
                     location.reload()
-                    //window.location.assign('http://localhost:3000/assignments');
+                    window.location.assign('http://localhost:3000/assignments');
                 }
                 ) 
                 .catch((error) => {
@@ -132,34 +163,6 @@ export default{
                 }
             )
             }
-        },
-        filteredListStudent(){
-            console.log("--------------------")
-            if(this.searchDataStudent == ''){
-                return this.students = this.searchStudent;
-            }else{
-                
-                this.students = this.searchStudent.filter(student => 
-                student.first_name.toLowerCase().replace(/\s+/g, '') === this.searchDataStudent.toLowerCase().replace(/\s+/g, '')
-                || student.last_name.toLowerCase().replace(/\s+/g, '') === this.searchDataStudent.toLowerCase().replace(/\s+/g, '')
-                || (student.first_name.toLowerCase()+student.last_name.toLowerCase()).replace(/\s+/g, '') === this.searchDataStudent.toLowerCase().replace(/\s+/g, '')  
-                );
-                return this.students
-            }
-            
-        },
-        filteredListGrade(){
-            console.log("--------------------")
-            if(this.searchDataGrade == ''){
-                return this.grades = this.searchGrade;
-            }else{
-                
-                this.grades = this.searchGrade.filter(grade => 
-                grade.name.toLowerCase().replace(/\s+/g, '') === this.searchDataGrade.toLowerCase().replace(/\s+/g, '')
-                );
-                return this.grades
-            }
-            
         }
     }
 }

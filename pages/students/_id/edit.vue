@@ -1,31 +1,52 @@
 <template>
     <div>
-        <h1>Actualizar estudiante</h1>
-        <nuxt-link to="/students"> Listar estudiantes</nuxt-link>
-
-        <form @submit.prevent="uptade">
-            <div>
-                <label>Nombre</label>
-                <input placeholder="Ingrese el nombre" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" v-model="student.first_name"/>
+        <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 text-blue-600">Actualizar estudiante</h1>
+            <div class="flex items-center justify-start">
+                <div class="inline-flex shadow-md hover:shadow-lg focus:shadow-lg" role="group">
+                    <nuxt-link class="rounded-l px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight
+                                uppercase
+                                hover:bg-blue-700
+                                focus:bg-blue-700 focus:outline-none focus:ring-0
+                                active:bg-blue-800
+                                transition
+                                duration-150
+                                ease-in-out" to="/students"> Listar estudiantes
+                    </nuxt-link>
+                </div>
             </div>
-            <div>
-                <label>Apellido</label>
-                <input placeholder="Ingrese el apellido" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" v-model="student.last_name"/>
-            </div>
-            <div>
-                <label>edad</label>
-                <input placeholder="Ingrese la edad" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" v-model="student.age"/>
-            </div>
-            <div>
-                <label>Telefono</label>
-                <input placeholder="Ingrese el telefono" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" v-model="student.cell_phone"/>
-            </div>
-            <div>
-                <label>Dirección</label>
-                <input placeholder="Ingrese la dirección" class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" v-model="student.address"/>
-            </div>
-            <a v-on:click="uptade" href="/students" >Guardar</a>
-        </form>
+         <div class="w-full">
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" @submit.prevent="uptade">
+                
+                <div class="relative z-0">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="namestudent">Nombre</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="namestudent" type="text" placeholder="Ingrese el nombre" v-model="student.first_name"/>                
+                </div>
+                <div>
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="lastnamestudent">Apellido</label>
+                    <input placeholder="Ingrese el apellido" 
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="lastnamestudent" type="text" v-model="student.last_name"/>
+                </div>
+                <div>
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="agestudent">edad</label>
+                    <input placeholder="Ingrese la edad" 
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="agestudent" type="text" v-model="student.age"/>
+                </div>
+                <div>
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="cellphonestudent">Telefono</label>
+                    <input placeholder="Ingrese el telefono" 
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="cellphonestudent" type="text" v-model="student.cell_phone"/>
+                </div>
+                <div>
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="addressstudent">Dirección</label>
+                    <input placeholder="Ingrese la dirección" 
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="addressstudent" type="text" v-model="student.address"/>
+                </div>
+                <button type="submit" href="/students" 
+                class="rounded-r inline-block px-4 py-1.5 bg-green-600 text-white font-medium text-xs leading-tight uppercase hover:bg-green-700 focus:bg-green-700 focus:outline-none focus:ring-0 active:bg-green-800 transition duration-150 ease-in-out"
+                >Guardar</button>
+            
+            </form>
+        </div>
     </div>
 </template>
 
